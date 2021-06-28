@@ -14,9 +14,9 @@ enum {
 	VERBOSE          = false,  /* write dump of input to stdout, debug message to stderr */
 	TABSTOP          = 8,      /* hardware tabstop */
 	LAZY_DRAW        = true,   /* don't draw when input data size is larger than BUFSIZE */
-	BACKGROUND_DRAW  = true,  /* always draw even if vt is not active */
+	BACKGROUND_DRAW  = false,  /* always draw even if vt is not active */
 	VT_CONTROL       = true,   /* handle vt switching */
-	FORCE_TEXT_MODE  = false,  /* force KD_TEXT mode (not use KD_GRAPHICS mode) */
+	FORCE_TEXT_MODE  = true,  /* force KD_TEXT mode (not use KD_GRAPHICS mode) */
 	SUBSTITUTE_HALF  = 0x0020, /* used for missing glyph(single width): U+0020 (SPACE) */
 	SUBSTITUTE_WIDE  = 0x3000, /* used for missing glyph(double width): U+3000 (IDEOGRAPHIC SPACE) */
 	REPLACEMENT_CHAR = 0x003F, /* used for malformed UTF-8 sequence   : U+003F (QUESTION MARK) */
